@@ -43,7 +43,7 @@ yahoodata <- function(ticker, from, to){
   mc1 = c(-1,1,1,-1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1),
   preference = c(1,3,1,2,7,9,9,8,6,7,7,5,9,7,10,8),
   stringsAsFactors = FALSE
-)
+);
 
 fit <- lm(preference ~ s1+s2+m1+m2+price+l1+l2+z1+mc1, data=d);
 return(coefficients(fit));
