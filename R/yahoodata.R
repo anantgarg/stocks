@@ -7,10 +7,13 @@
 #' @param to end date. Either string or date object.
 #' @return dataframe with historical prices
 #' @export
-yahoodata <- function(data,ticker, from, to){
+yahoodata <- function(data){
   
   d <- as.data.frame(data);
+ 
 
-  return(d);
+fit <- lm(preference ~ s1+s2+m1+m2+price+l1+l2+z1+mc1, data=d);
+return(coefficients(fit));
+
    
 }
