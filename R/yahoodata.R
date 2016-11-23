@@ -26,7 +26,7 @@ yahoodata <- function(ticker, from, to){
     paste(names(args), args, sep="=", collapse="&"), sep="");
     
   mydata <- tryCatch(read.csv(myurl), error=function(e){
-  	stop("Failed to download data from Yahoo. Could be invalid stock.")
+  	stop("Failed to download data from Yahoo. Could be invalid stock. OK")
   });
   
   mydata$Date <- as.Date(mydata$Date);
