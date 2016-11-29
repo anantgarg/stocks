@@ -7,7 +7,7 @@
 #' @param to end date. Either string or date object.
 #' @return dataframe with historical prices
 #' @export
-yahoodata <- function(data,formulaX,random){
+yahoodata <- function(data,formulaX,ra){
   
   d <- as.data.frame(data);
   
