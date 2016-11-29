@@ -10,11 +10,12 @@
 yahoodata <- function(data,formulaX){
   
   d <- as.data.frame(data);
+  
  form1 <- as.formula(formulaX);
   
 fit <- lm(form1, data=d);
 
-  
+  return(formulaX);  
   return(coefficients(fit));
 
    
