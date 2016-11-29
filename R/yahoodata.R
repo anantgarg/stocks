@@ -15,7 +15,7 @@ yahoodata <- function(data,formulaX){
   
 fit <- lm(form1, data=d);
 
-  return(formulaX);  
+  return(d);  
   return(coefficients(fit));
 
    
