@@ -20,7 +20,7 @@ yahoodata <- function(data,formulaX,random){
   a6 = c(1,1,-1,-1,-1,-1,1,1,1,1,-1,-1,-1,-1,1,1),
   a7 = c(1,-1,1,-1,-1,1,-1,1,-1,1,-1,1,1,-1,1,-1),
   preference = c(8,6,5,8,5,3,4,6,3,4,4,8,5,2,8,6) 
-)
+);
   return (d);
   
  form1 <- as.formula(formulaX);
